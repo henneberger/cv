@@ -1,0 +1,134 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.2 (3/5/15)
+% Version 1.3 (4/2/17) Daniel Henneberger
+% 
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\begin{document}
+
+\header{daniel}{henneberger}{software engineer}
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+~
+1723 Pebble Beach Dr
+Vienna, VA 22182
+United States
+~
+(301) 547 6929
+~
+{\fontsize{8pt}{10pt}\selectfont\href{mailto:jobs@danielhenneberger.com}{jobs@danielhenneberger.com}}
+\section{languages}
+~
+Java, JavaScript
+\section{interests}
+~
+\textbf{professional:}
+data science
+machine learning
+data analysis
+web development
+software engineering
+~
+\textbf{personal:}
+hackathons
+genetic engineering
+beer brewing
+amateur radio
+number theory
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+\begin{entrylist}
+\entry
+{2015--Now}
+{\href{https://www.addthis.com/}{Addthis (Acquired by Oracle)}}
+{Tysons Corner, Virginia}
+{Senior Software Engineer, Full Stack, Oracle Data Cloud}
+{
+	Developed a high volume, scalable big data analytic platform to visualize and act on data from 15M domains and over 9 petabytes of data monthly. Built highly available REST web services in a containerized microservice environment. Worked in a fast paced agile environment with 2-week release cycles. Researched technologies and methodologies to build new data analysis products. Hackathon winner for data visualization and microservice interaction tracing. \\
+	\textbf{technologies:} java (dropwizard, rabbitmq, cassandra); javascript (react, es2017); data science (clustering, nlp, k-means, collaborative filtering, t-sne); infrastructure (hydra, open tracing, kubernetes, docker, metrics, elasticsearch)
+}
+\entry
+{2014--2015}
+{\href{https://www.mesoscale.com/}{Mesoscale Discovery}}
+{Gaithersburg, Maryland}
+{Software Engineer}
+{
+	Developed cloud-based laboratory management software, implemented data-driven procedures for automated reagent dispensing systems, and codified validated protocols for micro-plate test kits used in the biodefense, clinical, and life-science markets. Developed highly tested and documented software consistent with FDA regulated software systems.\\
+	\textbf{technologies:} java, rabbitmq, sql, aws (s3), xml, osgi
+}
+\entry
+{2011--2013}
+{\href{http://www.frostburg.edu/}{Frostburg State University}}
+{Frostburg, Maryland}
+{Graduate Assistant}
+{
+	Assisted in teaching and held labs for the computer science department. Lectured, developed course material, and mentored students. Held consistent office hours and assisted the department with other duties. Led students in computer related extracurricular activities.
+}
+\entry
+{2010--2011}
+{\href{https://www.micropact.com/}{Micropact}}
+{Herndon, Virginia}
+{Applications Engineer}
+{
+	Developed high profile data and business process management software for Department of Justice and the Internal Revenue Service in a proprietary java j2ee framework. Independently worked on-site and held several security clearances.\\
+	\textbf{technologies:} java, sql, javascript, jquery, itext, spring
+}
+\entry
+{2008--2010}
+{Concept C Marketing \& Design}
+{Frederick, Maryland}
+{Web Programmer, Part-time}
+{
+	Developed, deployed, and maintained responsive websites using early web technologies such as php, bootstrap, jquery, and foundation.
+}
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{education}
+
+\begin{entrylist}
+\entryFour
+{2011--2013}
+{Masters {\normalfont of Science: Computer Science}}
+{Frostburg State University, Maryland}
+{
+Master's Thesis: \emph{Affine Convolutions for Font Classification} \\ This thesis explored classifying font types using affine invariant convolutions. \\
+Contributed to open source projects.
+	\begin{itemize}
+	\item 4.0/4.0 GPA
+	\item Department Honors for academic excellence 
+	\end{itemize}
+}
+\entryFour
+{2007--2009}
+{Bachelor {\normalfont of Science: Computer Science}}
+{Frostburg State University, Maryland}
+{}
+
+\end{entrylist}
+
+\end{document}
