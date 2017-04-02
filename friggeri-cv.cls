@@ -148,8 +148,9 @@
   \end{tabular*}
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
-\newcommand{\entryFour}[4]{%
-  #1&\parbox[t]{12.9cm}{%
+
+\newcommand{\entryFour}[4]{% Used for education listing
+  #1&\parbox[t]{12.9cm}{% Size of the main listing
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
@@ -161,7 +162,7 @@
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
-    {\thinfont#4\vspace{0.25\parsep}}\\%
+    {\thinfont#4\vspace{0.25\parsep}}\\%space after the position title
     #5\vspace{2\parsep}%
   }\\}
 
@@ -179,7 +180,7 @@
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{3.6}(0.8, 4.33)
+  \begin{textblock}{3.6}(0.8, 4.33)% absolute position block ({hhsizei}(hhposi,hvposi))
   \begin{flushright}
   \obeycr
 }{%
@@ -194,7 +195,7 @@
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=5.1cm,top=2cm,right=1.5cm,bottom=0.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=5.1cm,top=2cm,right=1.5cm,bottom=0.5cm,nohead,nofoot]{geometry}% package sizes
 \RequirePackage{hyperref}
 \hypersetup{
     colorlinks=false,       
