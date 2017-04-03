@@ -6,7 +6,7 @@ This is a fork of the friggeri-cv repository, which no longer exists. Latex depe
  - Formatted to US Letter paper
 
 # To Run
-You will need the proper Helvetica Neue fonts in the path, which can be found online. Execute this command to generate the cv and a cv.pdf will hopefully appear.
+You will need the proper Helvetica Neue fonts in the path, which can be found online. Then build and run the docker container. Execute this command to generate the cv and a cv.pdf will hopefully appear.
 ```
 ./dockercmd.sh xelatex cv.tex
 ```
