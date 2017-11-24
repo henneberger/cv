@@ -150,21 +150,27 @@
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 
 \newcommand{\entryFour}[4]{% Used for education listing
-  #1&\parbox[t]{12.9cm}{% Size of the main listing
+  \parbox[t]{14.9cm}{% Size of the main listing
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
     #4\vspace{\parsep}%
   }\\}
 
-\newcommand{\entry}[5]{%
-  #1&\parbox[t]{12.9cm}{%
-    \textbf{#2}%
-    \hfill%
-    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
-    {\thinfont#4\vspace{0.25\parsep}}\\%space after the position title
-    #5\vspace{2\parsep}%
-  }\\}
+% 1: Duration
+% 2: Employer
+% 3: Location
+% 4: Title
+% 5: Description
+\newcommand{\entry}[5]{
+  \parbox[t]{14.9cm}{
+    \parbox[t]{2cm}{#1}
+    \textbf{#4} - {\thinfont#2}
+    \hfill{\footnotesize\addfontfeature{Color=lightgray} #3\vspace{\parsep}}\\
+    {#5\vspace{\parsep}}
+
+  }\\
+  \\}
 
   
 
