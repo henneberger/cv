@@ -54,7 +54,7 @@
 \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 
 \newfontfamily\bodyfont[]{HelveticaNeue.ttf}
-\newfontfamily\thinfont[]{HelveticaNeue Thin.ttf}
+\newfontfamily\thinfont[]{HelveticaNeue_Thin.ttf}
 \newfontfamily\headingfont[]{HelveticaNeueBd.ttf}
 
 \defaultfontfeatures{Mapping=tex-text}
