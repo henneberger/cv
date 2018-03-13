@@ -1,1 +1,1 @@
-exec docker run --rm -i --net=none -v "$PWD":/data ec79da60815c "$@"
+exec docker run --rm -i --net=none -v "$PWD":/data 017cb70bde24 "$@"

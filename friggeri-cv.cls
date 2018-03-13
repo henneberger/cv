@@ -54,11 +54,11 @@
 \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 
 \newfontfamily\bodyfont[]{HelveticaNeue.ttf}
-\newfontfamily\thinfont[]{HelveticaNeue_Thin.ttf}
-\newfontfamily\headingfont[]{HelveticaNeueBd.ttf}
+\newfontfamily\thinfont[]{HelveticaNeue-Thin.ttf}
+\newfontfamily\headingfont[]{HelveticaNeue-Bold.ttf}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{HelveticaNeue Light.ttf}
+\setmainfont[Mapping=tex-text, Color=textcolor]{HelveticaNeue.ttf}
 
 %\setmathfont{XITS Math}
 
