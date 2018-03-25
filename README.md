@@ -12,8 +12,8 @@ You will need the proper Helvetica Neue fonts in the path, which can be found on
 ```
 
 # Example
-![Image of CV](/sample.png)
-
+![Image of CV](/sample-0.png)
+![Image of CV](/sample-1.png)
 # License
 CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 
