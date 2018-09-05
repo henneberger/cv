@@ -1,1 +1,2 @@
-exec docker run --rm -i --net=none -v "$PWD":/data 017cb70bde24 "$@"
+docker build -t resume/latex .
+exec docker run --rm -i --net=none -v "$PWD":/data resume/latex "$@"
