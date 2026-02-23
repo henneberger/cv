@@ -51,14 +51,20 @@
 %%%%%%%%%
 
 \RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\RequirePackage[math-style=TeX]{unicode-math}
 
-\newfontfamily\bodyfont[]{HelveticaNeue.ttf}
-\newfontfamily\thinfont[]{HelveticaNeue-Thin.ttf}
-\newfontfamily\headingfont[]{HelveticaNeue-Bold.ttf}
-
-\defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{HelveticaNeue.ttf}
+\defaultfontfeatures{Ligatures=TeX}
+\IfFontExistsTF{HelveticaNeue.ttf}{
+  \newfontfamily\bodyfont[]{HelveticaNeue.ttf}
+  \newfontfamily\thinfont[]{HelveticaNeue-Thin.ttf}
+  \newfontfamily\headingfont[]{HelveticaNeue-Bold.ttf}
+  \setmainfont[Color=textcolor]{HelveticaNeue.ttf}
+}{
+  \newfontfamily\bodyfont[]{TeX Gyre Heros}
+  \newfontfamily\thinfont[]{TeX Gyre Heros}
+  \newfontfamily\headingfont[]{TeX Gyre Heros Bold}
+  \setmainfont[Color=textcolor]{TeX Gyre Heros}
+}
 
 %\setmathfont{XITS Math}
 
@@ -95,6 +101,7 @@
 % Structure %
 %%%%%%%%%%%%%
 \RequirePackage{parskip}
+\RequirePackage{longtable}
 
 \newcounter{colorCounter}
 \def\@sectioncolor#1#2#3{%
@@ -143,9 +150,9 @@
 
 \setlength{\tabcolsep}{0pt}
 \newenvironment{entrylist}{%
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+  \begin{longtable}{@{}l@{}}
 }{%
-  \end{tabular*}
+  \end{longtable}
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 
@@ -164,7 +171,7 @@
 % 5: Description
 \newcommand{\entry}[5]{
   \parbox[t]{14.9cm}{
-    \parbox[t]{2cm}{#1}
+    \parbox[t]{2.6cm}{\raggedright #1}
     \textbf{#4} - {\thinfont#2}
     \hfill{\footnotesize\addfontfeature{Color=lightgray} #3\vspace{\parsep}}\\
     {#5\vspace{\parsep}}

@@ -5,10 +5,22 @@ This is a fork of the friggeri-cv repository, which no longer exists. Latex depe
  - Dockerized latex resume based off of the friggeri
  - Formatted to US Letter paper
 
-# To Run
-You will need the proper Helvetica Neue fonts in the path, which can be found online. Then build and run the docker container. Execute this command to generate the cv and a cv.pdf will hopefully appear.
+# Build (Reliable)
+Prerequisite: Docker.
+
+Build the PDF in a repeatable containerized environment:
+```bash
+make build
 ```
-./dockercmd.sh xelatex cv.tex
+
+This command:
+- Builds the local image from `Dockerfile`
+- Runs `latexmk` with XeLaTeX (multi-pass) so references/header rendering converge reliably
+- Produces `cv.pdf` in the repository root
+
+Alternative:
+```bash
+./compile_container.sh
 ```
 
 # Example
