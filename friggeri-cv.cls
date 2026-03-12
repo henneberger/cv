@@ -56,8 +56,16 @@
 \defaultfontfeatures{Ligatures=TeX}
 \IfFontExistsTF{HelveticaNeue.ttf}{
   \newfontfamily\bodyfont[]{HelveticaNeue.ttf}
-  \newfontfamily\thinfont[]{HelveticaNeue-Thin.ttf}
-  \newfontfamily\headingfont[]{HelveticaNeue-Bold.ttf}
+  \IfFontExistsTF{HelveticaNeue-Thin.ttf}{
+    \newfontfamily\thinfont[]{HelveticaNeue-Thin.ttf}
+  }{
+    \newfontfamily\thinfont[]{HelveticaNeue.ttf}
+  }
+  \IfFontExistsTF{HelveticaNeue-Bold.ttf}{
+    \newfontfamily\headingfont[]{HelveticaNeue-Bold.ttf}
+  }{
+    \newfontfamily\headingfont[]{HelveticaNeue.ttf}
+  }
   \setmainfont[Color=textcolor]{HelveticaNeue.ttf}
 }{
   \newfontfamily\bodyfont[]{TeX Gyre Heros}
