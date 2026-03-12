@@ -29,7 +29,6 @@ Alternative:
 CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 
 ## TODO
- - The header doesn't appear on first run and takes an additional run to fix.
- - Remove hard coded Helvetica Neue font references, explore alternative OpenFonts such as roboto, lato, or raleway. Current font looks a little blurry.
- - Slim down the latex dependencies in the docker container (currently @4gb)
+ - Evaluate open font alternatives (e.g. Roboto, Lato, Raleway) and tune rendering quality.
+ - Slim down the latex dependencies in the docker container (currently large).
  - Printing looks off
