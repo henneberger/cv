@@ -218,6 +218,7 @@
 
 \RequirePackage[left=5.1cm,top=2cm,right=1.5cm,bottom=0.5cm,nohead,nofoot]{geometry}% package sizes
 \RequirePackage{hyperref}
+\hypersetup{hidelinks}
 \hypersetup{
     colorlinks=false,       
     linkcolor=red,          
