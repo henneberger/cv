@@ -1,0 +1,10 @@
+*.ttf
+*.log
+*.out
+*.aux
+*.pdf
+*.fdb_latexmk
+*.fls
+*.xdv
+
+.tmp-*

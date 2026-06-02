@@ -1,0 +1,149 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.2 (3/5/15)
+% Version 1.3 (4/2/17) Daniel Henneberger
+% 
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\begin{document}
+
+\header{daniel}{henneberger}{Software Engineer}
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+~
+San Francisco, CA 94110
+United States
+~
+(240) 415-8436
+~
+{\fontsize{7pt}{9pt}\selectfont\href{mailto:henneberger.daniel@gmail.com}{henneberger.daniel@gmail.com}}
+\section{core stack}
+~
+Java, Rust, SQL
+\section{focus}
+~
+event streaming
+data observability
+AI / ML
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+\begin{entrylist}
+\entry
+{2025--2026}
+{Atlan}
+{Remote - San Francisco, CA}
+{Principal Software Engineer}
+{
+	Lead platform modernization at Atlan through high-autonomy technical execution, reworking the primary metadata storage path to deliver a 10x throughput gain while materially improving data consistency. Drove cross-team platform alignment to reduce siloed decision-making and tightened architecture. Responsible for innovation with the Context Graph for data governance, helping to maintain Atlan leadership status with Gartner and Forrester, which included product exploration around knowledge graphs, context graphs, and context-layer design, alongside deep platform work in Iceberg-oriented data improvements, data materialization patterns, and AI-native development workflows.
+}
+\entry
+{2021--2025}
+{\href{https://datasqrl.com/}{DataSQRL}}
+{Remote - San Francisco, CA}
+{Co-Founder \& Core Developer}
+{
+	Co-founded and built a bootstrapped startup with the founder of JanusGraph around a SQL-first platform that unified streaming and relational systems into a single developer workflow for low latency Petabyte-scale pipelines. Acted as core architect and primary builder from concept through product-market fit, while leading customer-facing integrations and production rollouts. Scaled to sustained seven-figure annual revenue without outside funding and expanded the platform into AI-native territory with neuro-symbolic exploration, data-lake integration, RAG pipelines, vector support, and customer-specific knowledge repositories.
+}
+\entry
+{2020--2021}
+{\href{https://openlineage.io/}{Datakin}}
+{Remote - San Francisco, CA}
+{Principal Software Engineer}
+{
+	Co-created the OpenLineage specification with a co-creator of Parquet, establishing a common lineage telemetry standard adopted across the data ecosystem, adopted by Apple and Google. Developed the Marquez OSS project. Built the reference implementation, native integrations, and managed cloud service in Java and Python for both open-source users and enterprise teams. Helped drive community alignment that turned lineage from a fragmented concern into a shared industry standard.
+}
+\entry
+{2018--2020}
+{\href{https://www.datastax.com/}{DataStax}}
+{Remote - San Francisco, CA}
+{Principal Engineer - CTO Office}
+{
+	Worked directly in the CTO office to prototype next-generation data-platform capabilities on Cassandra and translate research ideas into production-oriented systems. Served as the initial backend lead for a new SaaS effort, designed a novel approach to NoSQL query optimization, and built foundational components that informed product direction.
+}
+\entry
+{2015--2018}
+{\href{https://www.addthis.com/}{Oracle Data Cloud/AddThis}}
+{Tysons Corner, Virginia}
+{Principal Software Engineer}
+{
+	Led and developed petabyte-scale machine learning, natural language processing, hybrid search, and analytics infrastructure for ad-tech data science teams. Contributed an object storage layer to a novel streaming distributed database. Four-time hackathon winner across search, visualization, tracing, and in-memory analytics projects.
+}
+\entry
+{2014--2015}
+{\href{https://www.mesoscale.com/}{Mesoscale Discovery}}
+{Gaithersburg, Maryland}
+{Software Engineer}
+{
+	Built cloud laboratory management software and validated automation workflows for regulated clinical and life-science environments, with strong emphasis on testability and documentation quality.
+}
+\entry
+{2011--2013}
+{\href{http://www.frostburg.edu/}{Frostburg State University}}
+{Frostburg, Maryland}
+{Graduate Assistant}
+{
+	Taught labs, developed course materials, and mentored students in core computer science curriculum and extracurricular software/security projects.
+}
+\entry
+{2010--2011}
+{\href{https://www.micropact.com/}{Micropact}}
+{Herndon, Virginia}
+{Applications Engineer}
+{
+	Built mission-critical Java/J2EE BPM software for DOJ and IRS programs while working directly with client teams in high-trust environments.
+}
+\entry
+{2008--2010}
+{Concept C Marketing \& Design}
+{Frederick, Maryland}
+{Web Developer}
+{
+	Developed and maintained responsive client websites, establishing early full-stack fundamentals that shaped later systems work.
+}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{education}
+
+\begin{entrylist}
+\entryFour
+{2011--2013}
+{Master {\normalfont of Science: Computer Science}}
+{Frostburg State University, Maryland}
+{
+		\begin{itemize}
+		\item 4.0/4.0 GPA
+	\item Department Honors for academic excellence 
+	\end{itemize}
+}
+\entryFour
+{2007--2009}
+{Bachelor {\normalfont of Science: Computer Science}}
+{Frostburg State University, Maryland}
+{}
+
+\end{entrylist}
+
+\end{document}
