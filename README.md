@@ -1,4 +1,6 @@
 # cv
+## [Resume PDF](./cv.pdf)
+
 This is a fork of the friggeri-cv repository, which no longer exists. Latex dependencies are maintained through a docker image.
 
 # Improvements / Changes
@@ -24,7 +26,14 @@ Alternative:
 ```
 
 # Example
-![Image of CV](/sample.png)
+Generate preview images for every page after building the PDF:
+```bash
+./update_samples.sh
+```
+
+![CV page 1](/sample-1.png)
+![CV page 2](/sample-2.png)
+
 # License
 CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 
